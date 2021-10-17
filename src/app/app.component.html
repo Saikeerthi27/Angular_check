@@ -1,0 +1,99 @@
+
+<div class="row">
+<div class="col-sm-6">
+  <p class="text-center text-primary">Parent component</p>
+  <form #ref="ngForm" (ngSubmit)="formSubmit(ref)">
+  <div class="form-group">
+    <label for="">Enter Data</label>
+    <input type="text" name="data" id="" class="form-control" ngModel> 
+    <button class="btn btn-success mt-3d-block mx-auto" >Send data to child</button>
+    </div>
+    </form>
+</div>
+
+<div class="col-sm-6">
+  <app-test1></app-test1>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row ">
+<div class="col-sm-8 mx-auto"> 
+
+  <form #ref="ngForm" (ngSubmit)="formSubmit(ref)">
+  <div class="form-group">
+    <label for="name" >Name</label>
+  <br>
+  <input type="text" id="name" name="username" class="form-control" ngModel>
+  </div>
+  <div class="form-group">
+  <label for="dob">Date-of-Birth</label>
+  <input type="date" id="dob" name="dob" class="form-control" ngModel>  
+  </div>
+  <div>
+  <label for="age">Age</label>
+  <input type="number" id="age" name="age" class="form-control" ngModel>
+  </div>
+  <div>
+  <label for="adrs">Address</label>
+  <input type="text" id="adrs" name="address" class="form-control" ngModel>  
+  </div>
+  <div>
+  <label for="mail">Email</label>
+  <input type="email" id="mail" name="email" class="form-control" ngModel>
+  </div>
+
+  <button type="submit" class="btn btn-primary d-block mx-auto mt-3">Submit</button>
+  
+  </form>
+
+</div> 
+
+</div>
+
+<div class="container">
+<p class="display-4 text-center text-primary">Registered Users</p>
+<hr>
+<table class="table">
+<thead>
+  <th>Username</th>
+  <th>DOB</th>
+  <th>Age</th>
+  <th>Address</th>
+  <th>Email</th>
+
+</thead>
+<tr *ngFor='let x of details'>
+  <td>{{x.username}}</td>
+  <td>{{x.dob}}</td>
+  <td>{{x.age}}</td>
+  <td>{{x.address}}</td>
+  <td>{{x.email}}</td>
+</tr>
+</table>
+  
+</div> -->
